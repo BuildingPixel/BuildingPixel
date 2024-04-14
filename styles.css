@@ -1,0 +1,98 @@
+/* Estilos para el fondo de la página */
+body {
+    background-color: black; /* Color de fondo negro */
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive; /* Fuente con estilo arcade */
+}
+
+.titulo {
+    color: #FFD700; /* Color dorado */
+    text-align: center;
+    margin-top: 50px; /* Aumentar la distancia desde la parte superior */
+    font-size: 64px; /* Aumentar el tamaño de la fuente */
+    position: absolute;
+    top: 0; /* Situar en la parte superior */
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Pixel Operator', monospace; /* Fuente con estilo arcade */
+}
+
+#mural {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px; /* Ancho del mural */
+    height: 600px; /* Alto del mural */
+    border: 4px solid #39FF14; /* Borde del mural (verde neón) */
+    box-shadow: 0 0 5px #39FF14, 0 0 10px #39FF14, 0 0 15px #39FF14, 0 0 20px #39FF14, 0 0 35px #39FF14, 0 0 40px #39FF14, 0 0 50px #39FF14; /* Resplandor alrededor del borde */
+    display: grid;
+    grid-template-columns: repeat(100, 10px); /* 100 columnas */
+    grid-template-rows: repeat(60, 10px); /* 60 filas */
+    gap: 0; /* Sin espacio entre los píxeles */
+    background-color: #fff; /* Color de fondo del mural (blanco) */
+}
+
+.pixel {
+    width: 10px; /* Ancho de cada píxel */
+    height: 10px; /* Alto de cada píxel */
+    border: 1px solid #333; /* Borde gris oscuro para simular una cuadrícula */
+    background-color: #fff; /* Color de fondo blanco */
+}
+
+#figuras {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Evitar que las figuras afecten los eventos del ratón */
+}
+
+/* Estilos para los botones */
+#tools {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#tools input[type="color"], #tools button {
+    display: block;
+    margin-bottom: 10px;
+    font-family: 'Pixel Operator', monospace; /* Fuente con estilo arcade */
+}
+
+.boton {
+    background-color: #FFD700; /* Color dorado */
+    color: black; /* Color de texto negro */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-family: 'Pixel Operator', monospace; /* Fuente con estilo arcade */
+}
+
+.boton:hover {
+    background-color: #FFA500; /* Cambiar a un color naranja al pasar el cursor */
+}
+
+.boton.active {
+    box-shadow: 0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 15px #FFD700, 0 0 20px #FFD700, 0 0 35px #FFD700, 0 0 40px #FFD700, 0 0 50px #FFD700; /* Resplandor alrededor del botón */
+}
+
+/* Estilos para la imagen en movimiento */
+#imagenMovil {
+    position: absolute;
+    width: 100px; /* Ancho de la imagen */
+    height: 100px; /* Alto de la imagen */
+    pointer-events: none; /* Evitar que la imagen afecte los eventos del ratón */
+}
+
+
+
+
+
+
+
+
